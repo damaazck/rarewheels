@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrearCuenta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="imgs/diseño.svg" width="200px" alt="icono">
+        <h1>RAREWHEELS</h1>
+    </header>
+    <main class="main1">
+        <section class="c_cuenta">
+            <div class="d_cuenta">
+                <h2 class="ti">CREAR CUENTA</h2>
+                <form id="registroForm" novalidate>
+                    <table class="form-table" role="presentation">
+                        <tr>
+                            <th><label for="nombre">Nombre</label></th>
+                            <td>
+                                <span class="input-wrap">
+                                    <input id="nombre" name="nombre" type="text" required autocomplete="name"
+                                        placeholder="Ingresa tu nombre" />
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="correo">Email</label></th>
+                            <td>
+                                <span class="input-wrap">
+                                    <input id="correo" name="correo" type="email" required autocomplete="email"
+                                        placeholder="abcdef@correo.com" />
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="contrasena">Contraseña</label></th>
+                            <td>
+                                <span class="input-wrap">
+                                    <input id="contrasena" name="contrasena" type="password" required minlength="8"
+                                        autocomplete="new-password" placeholder="Mínimo 8 caracteres" />
+                                </span>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="confirmar">Confirmación</label></th>
+                            <td>
+                                <span class="input-wrap">
+                                    <input id="confirmar" name="confirmar" type="password" required
+                                        autocomplete="new-password" placeholder="Repite la contraseña" />
+                                </span>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="btn" id="crearBtn">CREAR</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="/productos.html">PRODUCTOS</a>
+            <a href="/crearCuenta.html">REGISTRARSE</a>
+            <a href="/iniciarSesion.html">INICIAR SESIÓN</a>
+            <a href="/index.html">SOBRE NOSOTROS</a>
+        </nav>
+    </footer>
+</body>
+</html>
